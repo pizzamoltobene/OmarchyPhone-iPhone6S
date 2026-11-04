@@ -55,7 +55,9 @@ This is experimental work. Boot procedures and storage changes can cause data lo
 
 ## Support
 
-The aim is to fund development tools and older devices for hands-on testing. Donation links and verified project updates will be added when available.
+Support helps fund an AI development subscription and older devices for hands-on testing.
+
+[Support the project on Ko-fi](https://ko-fi.com/paulwesker/goal?g=0)
 
 ## Contributing
 

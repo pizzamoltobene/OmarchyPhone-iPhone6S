@@ -1,5 +1,10 @@
 # Omarchy Phone: iPhone 6s
 
+![Platform: iPhone 6s](https://img.shields.io/badge/Device-iPhone%206s-555555?style=for-the-badge&logo=apple&logoColor=white)
+![System: Omarchy Linux](https://img.shields.io/badge/System-Omarchy%20Linux-1793D1?style=for-the-badge&logo=linux&logoColor=white)
+![Status: experimental](https://img.shields.io/badge/Status-Experimental-E8A838?style=for-the-badge)
+[![Support on Ko-fi](https://img.shields.io/badge/Support%20on-Ko--fi-FF5E5B?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/paulwesker/goal?g=0)
+
 **Giving older Apple hardware a second life, one working component at a time.**
 
 Omarchy Phone is an experimental project exploring how to make Omarchy Linux useful on an iPhone 6s. The goal is a pocket-sized Linux environment for terminal work, development, and AI-assisted workflows, built through hands-on testing and better hardware support.

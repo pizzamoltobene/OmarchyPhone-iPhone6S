@@ -19,27 +19,37 @@ The initial focus is the **iPhone 6s**. Other Apple devices, including the iPhon
 
 ## Current status
 
-The project has begun experimenting with Omarchy on the iPhone 6s. This repository is being established to document the work.
+The current test device is an **iPhone 6s (N71m / S8003, Apple A9)**. Linux boots into RAM through **DFU**. This is a host-assisted research setup, not a standalone installation or an untethered phone boot.
 
-| Component | Publicly verified project status |
+The results below distinguish device tests from builds and planned work. System revisions **r2/r3** and GPU research versions **v2/v3** refer to separate work streams.
+
+| Component | Tested status and limitations |
 | --- | --- |
-| Boot and installation procedure | Documentation in progress |
-| Display and touch | Results to be documented |
-| Wi-Fi and networking | Results to be documented |
-| Charging and battery | Results to be documented |
-| Audio, camera and cellular | Results to be documented |
-| GPU acceleration | Results to be documented |
+| Boot and installation procedure | RAM boot through DFU demonstrated; a standalone installation is not established |
+| Display and touch | GUI and touch verified on r2 |
+| Wi-Fi and networking | Wi-Fi and HTTPS verified on r2 |
+| Charging and battery | Charging verified on r2; battery life and broader power behavior remain uncharacterized |
+| Sleep and wake | Verified in a live r3 session; r3 cold boot has not been validated |
+| Audio, camera and cellular | Not yet verified |
+| GPU firmware | v2 reaches firmware boot-ready and stops cleanly on the device; no GPU jobs have run |
+| GPU acceleration | Not achieved; rendering currently uses CPU-based llvmpipe |
+| GPU raw-event instrumentation | v3 built, but not yet tested on the device |
 | Codex CLI | Not yet documented on this device |
 
-**“To be documented” does not mean that a feature is broken or working.** Results will be specific to the tested device, software version, and boot method.
+**A firmware-ready GPU is not an accelerated graphics stack.** Firmware startup and clean shutdown do not demonstrate job submission, successful GPU execution, or OpenGL ES support. Likewise, a successful live r3 sleep/wake test does not validate an r3 cold boot.
+
+**“Not yet verified” does not mean broken.** Results apply only to the tested device, revision, and boot method; they do not establish support for other Apple devices.
 
 ## First milestones
 
-1. Document a reproducible boot method and the exact tested configuration.
-2. Record hardware status with evidence and known limitations.
-3. Establish reliable terminal and network access.
-4. Experiment with Codex CLI and measure memory usage on the device.
-5. Investigate and improve missing hardware support.
+1. Document a reproducible DFU RAM-boot procedure and exact tested configuration, with logs and known limitations.
+2. Validate r3 from a cold boot and repeat sleep/wake testing.
+3. Test the built GPU v3 raw-event instrumentation on the device.
+4. Research the A9 G5P instruction set, PDS/PDM behavior, and GPU memory mapping, with the first execution target being a minimal GPU memory-fill job.
+5. Work toward OpenGL ES/EGL only after basic GPU execution and memory access are demonstrated.
+6. Continue hardware testing and investigate Codex CLI behavior and memory use on the device.
+
+These are next steps, not completed capabilities. No successful GPU job or hardware-accelerated OpenGL ES/EGL result is claimed.
 
 Future research may explore additional Apple devices and Darwin. These are directions for investigation, not promises of support or a release date.
 

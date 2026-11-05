@@ -1,8 +1,5 @@
 # Omarchy Phone: iPhone 6s
 
-![Platform: iPhone 6s](https://img.shields.io/badge/Device-iPhone%206s-555555?style=for-the-badge&logo=apple&logoColor=white)
-![System: Omarchy Linux](https://img.shields.io/badge/System-Omarchy%20Linux-1793D1?style=for-the-badge&logo=linux&logoColor=white)
-![Status: experimental](https://img.shields.io/badge/Status-Experimental-E8A838?style=for-the-badge)
 [![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-support-FF5E5B?style=flat&logo=kofi&logoColor=white&labelColor=555555)](https://ko-fi.com/paulwesker/goal?g=0)
 
 **Giving older Apple hardware a second life, one working component at a time.**
